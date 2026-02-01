@@ -47,8 +47,11 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Geocube Ltd. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Geocube Ltd. All rights reserved.</p>
         </footer>
     </main>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
